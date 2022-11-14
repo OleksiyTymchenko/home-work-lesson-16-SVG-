@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  color: #16133d;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #e4e4e4;
+}
+
+p {
+}
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.button {
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*======================== header ====================================*/
+
+.header {
+  padding: 25px 0;
+  border-bottom: 1px solid #efeef3;
+}
+
+.header .container {
+  display: flex;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.logo svg {
+  height: 30px;
+  width: 30px;
+}
+/*================================== section =======================================*/
+.section {
+  padding: 100px 0;
+}
+
+.explanation {
+  margin-bottom: 15px;
+}
+
+.service_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.service_list__item {
+  border: 1px solid #e5eaf4;
+  border-radius: 8px;
+
+  padding: 40px;
+  max-width: 290px;
+  width: 100%;
+}
+
+.service_list__item:hover {
+  border: 1px solid #3db370;
+  cursor: pointer;
+}
+
+.svg_image {
+  height: 39px;
+  width: 41px;
+
+  background-image: url(./img/svg/megaphone-blue.svg);
+  background-size: cover;
+}
+
+.service_list__item:hover .svg_image {
+  background-image: url(./img/svg/megaphone-green.svg);
+  background-size: cover;
+  height: 39px;
+  width: 41px;
+}
+
+.service_list__item:nth-child(2) .svg_image {
+  background-image: url(./img/svg/building-blue.svg);
+}
+
+.service_list__item:nth-child(2):hover .svg_image {
+  background-image: url(./img/svg/building-green.svg);
+  background-size: cover;
+}
+
+.service_list__item:nth-child(3) .svg_image {
+  background-image: url(./img/svg/phone-blue.svg);
+  height: 36px;
+  width: 24px;
+  margin: 0 auto;
+}
+
+.service_list__item:nth-child(3):hover .svg_image {
+  background-image: url(./img/svg/phone-green.svg);
+  background-size: cover;
+}
+.icon {
+  border: 1px solid #e8f0fb;
+  border-radius: 16px;
+  padding: 10px;
+  width: 64px;
+  height: 64px;
+
+  margin-bottom: 30px;
+}
+.section p {
+  margin-bottom: 30px;
+}
+
+.service_list__item a {
+  color: #3db370;
+  font-weight: 600;
+}
+/*==================================== footer ====================================*/
+
+footer {
+  background: #16133d;
+  padding: 40px 0;
+}
+
+.first_row {
+  display: flex;
+  color: #fff;
+}
+
+.footer h2 {
+  margin-bottom: 40px;
+}
+
+footer .social__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  max-width: 230px;
+  width: 100%;
+}
+
+.footer_icon {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+
+  background-color: #efeef3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+footer svg:hover {
+  fill: #3db370;
+}
+
+.footer_icon:hover .instagram {
+  opacity: 0;
+}
+
+.footer_icon:hover.footer_icon svg.instagram-hover {
+  z-index: 1;
+  background-image: url(./img/svg/socials/instagram-icon-hover.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.footer_icon:hover .facebook {
+  opacity: 0;
+}
+
+.footer_icon:hover.footer_icon svg.facebook-hover {
+  z-index: 1;
+  background-image: url(./img/svg/socials/facebook-icon-hover.svg);
+
+  background-size: cover;
+  width: 10px;
+  height: 20px;
+}
+
+.footer_icon:hover .github {
+  opacity: 0;
+}
+
+.footer_icon:hover.footer_icon svg.github-hover {
+  z-index: 1;
+  background-image: url(./img/svg/socials/github-icon-hover.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.footer_icon:hover .dribbble {
+  opacity: 0;
+}
+
+.footer_icon:hover.footer_icon svg.dribbble-hover {
+  z-index: 1;
+  background-image: url(./img/svg/socials/dribbble-icon-hover.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.footer_icon:hover .twitter {
+  opacity: 0;
+}
+
+.footer_icon:hover.footer_icon svg.twitter-hover {
+  z-index: 1;
+  background-image: url(./img/svg/socials/twitter-icon-hover.svg);
+  background-size: cover;
+  width: 20px;
+  height: 17px;
+}
